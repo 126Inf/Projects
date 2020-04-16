@@ -21,16 +21,16 @@ function renderStatistics(stats) {
           <td><Statistics text="Nuetral" value={nuetral} /></td>
         </tr>
         <tr>
-        <td><Statistics text="Bad" value={bad} /></td>
+          <td><Statistics text="Bad" value={bad} /></td>
         </tr>
         <tr>
-        <td><Statistics text="All" value={all} /></td>
+          <td><Statistics text="All" value={all} /></td>
         </tr>
         <tr>
-        <td><Statistics text="Average" value={calculateAverage(stats, all)} /></td>
+          <td><Statistics text="Average" value={calculateAverage(stats, all)} /></td>
         </tr>
         <tr>
-        <td><Statistics text="Positive" value={good / all} /></td>
+          <td><Statistics text="Positive" value={good / all} /></td>
         </tr>
       </tbody>
     </table >
@@ -46,16 +46,6 @@ function calculateAverage(stats, all) {
 }
 const Statistics = (props) => {
   return (<p>{props.text}: {props.text === "Positive" ? props.value + " %" : props.value}</p>)
-  // return (
-  //   <>
-  //   <p>Good: {good}</p>
-  //   <p>Nuetral: {nuetral}</p>
-  //   <p>Bad: {bad}</p>
-  //   <p>All: {all}</p>
-  //   <p>Average: {calculateAverage(props.stats, all)}</p>
-  //   <p>Positive: {good/all}%</p>
-  //   </>
-  // )
 }
 const Title = (props) => {
   return (
