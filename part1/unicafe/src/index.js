@@ -54,7 +54,7 @@ const Title = (props) => {
 };
 
 const Button = (props) => {
-  return (<button onClick={() => { props.handleClick() }}>{props.text}</button>)
+  return (<button onClick={props.handleClick}>{props.text}</button>)
 }
 const App = () => {
   const [good, setGood] = useState(0);
